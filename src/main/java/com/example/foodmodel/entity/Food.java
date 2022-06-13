@@ -23,6 +23,7 @@ public class Food extends BaseEntity {
         this.description = "";
         this.price = 0.0;
         this.thumbnail = "";
+        this.saleAt = LocalDateTime.now();
     }
 
     public Food(String name, int categoryId, String description, String thumbnail, double price, FoodStatus status, LocalDateTime saleAt) {
@@ -33,6 +34,7 @@ public class Food extends BaseEntity {
         this.price = price;
         this.status = status;
         this.saleAt = saleAt;
+        errors = new HashMap<>();
     }
 
     public Food(int id, String name, int categoryId, String description, String thumbnail, double price, FoodStatus status, LocalDateTime saleAt) {
@@ -44,6 +46,7 @@ public class Food extends BaseEntity {
         this.price = price;
         this.status = status;
         this.saleAt = saleAt;
+        errors = new HashMap<>();
     }
 
     public Food(int id, String name, int categoryId, String description, String thumbnail, double price, FoodStatus status, LocalDateTime saleAt, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt, int createdBy, int updatedBy, int deletedBy) {
@@ -130,7 +133,7 @@ public class Food extends BaseEntity {
         return this.checkValid();
     }
     public boolean checkValid() {
-        if(name == "" || name == null) {
+        if(name.length() <= 7  || name == null) {
             errors.put("name", "Please enter name");
         }
         if(price == 0) {

@@ -183,6 +183,12 @@
                                         </select>
 
                                     </div>
+                                    <div class="form-group">
+                                        <label for="saleAt">Sale At</label>
+                                        <input type="date" class="form-control " id="saleAt"
+                                               name="saleAt" value="<%= food.getSaleAt() %>"
+                                        >
+                                    </div>
 
                                     <button type="submit" class="btn btn-primary me-2">Submit</button>
                                     <button class="btn btn-light">Cancel</button>

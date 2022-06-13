@@ -116,7 +116,7 @@
                                     <div class="form-group">
                                         <label for="saleAt">Sale At</label>
                                         <input type="date" class="form-control " id="saleAt"
-                                               placeholder="Sale At" name="saleAt" value="<%= FormatterHelper.formatDate(food.getSaleAt(), "yyyy-MM-dd") %>"
+                                               name="saleAt" value="<%= food.getSaleAt() %>"
                                         >
                                     </div>
                                     <button type="submit" class="btn btn-primary me-2">Submit</button>
