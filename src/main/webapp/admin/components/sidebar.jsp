@@ -15,8 +15,8 @@
             </a>
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="/categories/create">Add New Category</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="/categories/list">Category List</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/create">Add New Category</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/admin/categories/list">Category List</a></li>
                 </ul>
             </div>
         </li>
@@ -29,10 +29,10 @@
             </a>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="/products/create"> Create Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/foods/create"> Create Product</a></li>
                 </ul>
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="/products/list"> Product List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/admin/foods/list"> Product List</a></li>
                 </ul>
             </div>
         </li>
