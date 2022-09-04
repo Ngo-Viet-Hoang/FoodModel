@@ -50,7 +50,7 @@ public class MySqlFoodModel implements FoodModel {
             preparedStatement.setString(4, food.getThumbnail());
             preparedStatement.setDouble(5, food.getPrice());
             preparedStatement.setInt(6, food.getStatus().getValue());
-            preparedStatement.setString(7, food.getSaleAt() != null ? food.getSaleAt().toString() : null);
+            preparedStatement.setString(7, food.getSaleAt() != null ? food.getSaleAt().toString() : null);  
             preparedStatement.setString(8, food.getCreatedAt().toString());
             preparedStatement.setString(9, food.getUpdatedAt().toString());
             preparedStatement.setInt(10, food.getCreatedBy());
